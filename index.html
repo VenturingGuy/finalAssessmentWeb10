@@ -2,45 +2,48 @@
 <html>
 <head>
   <title>Luis Ventura - Final - Web 1.0</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="student=info">
-      <h1>Luis Ventura</h1>
-      <p>My favorite color is Royal Blue and I wear DC!</p>
+  <div id="left-container">
+    <div id="student-info">
+        <h1>Luis Ventura</h1>
+        <p>My favorite color is Royal Blue and I wear DC!</p>
+    </div>
+
+
+    <div id="data-input">
+        <h1>Font Styler</h1>
+        <label for="input-size">Font Size</label>
+        <input id="input-size" type="number" value="16">
+        <label for="select-font">Font Family</label>
+        <select id="select-font">
+            <option label="Helvetica">Helvetica</option>
+            <option label="Arial">Arial</option>
+            <option label="Times New Roman">Times New Roman</option>
+            <option label="Georgia">Georgia</option>
+        </select>
+        <label for="input-color">Font Color</label>
+        <input id="input-color" type="color" value="#000">
+        <label for="input-bg-color">Background Color</label>
+        <input id="input-bg-color" type="color" value= "#fff">
+        <label for="enter-text">Enter Text</label>
+        <textarea id="enter-text">Sample Text</textarea>
+    </div>
   </div>
 
-
-  <div id="data-input">
-      <h1>Font Styler</h1>
-      <label for="input-size">Font Size</label>
-      <input id="input-size" type="number">
-      <label for="select-font">Font Family</label>
-      <select id="select-font">
-          <option label="Helvetica">Helvetica</option>
-          <option label="Arial">Arial</option>
-          <option label="Times New Roman">Times New Roman</option>
-          <option label="Georgia">Georgia</option>
-      </select>
-      <label for="input-color">Font Color</label>
-      <input id="input-color" type="color" value="#000">
-      <label for="input-bg-color">Background Color</label>
-      <input id="input-bg-color" type="color" value= "#fff">
-      <label for="enter-text">Enter Text</label>
-      <textarea id="enter-text"></textarea>
+  <div id="right-container">
+    <div id="headline-display">
+        <h1 id="display">Sample Text</h1>
+        <pre><code>.headlines {
+          font-size: <span id="show-size">16</span>px;
+          font-family: <span id="show-font">Times</span>;
+          color: <span id="show-color">#000</span>;
+          background-color: <span id="show-bg-color">#fff</span>;
+        }</code></pre>
+    </div>
   </div>
-
-
-  <div id="headline-display">
-      <h1 id="display"></h1>
-      <pre><code>.headlines {
-        font-size: <span id="show-size">16</span>px;
-        font-family: <span id="show-font">Times</span>;
-        color: <span id="show-color">#000</span>;
-        background-color: <span id="show-bg-color">#fff</span>;
-      }</code></pre>
-  </div>
-
-  
-  <div id="data-output"></div>
+    
+    <div id="data-output"></div>
 </body>
 </html>

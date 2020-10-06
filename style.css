@@ -1,0 +1,31 @@
+body {
+    display: flex;
+}
+
+#left-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#student-info {
+    margin-left: 16px;
+}
+
+#data-input {
+    padding: 16px 16px 16px 16px;
+    border: solid 4px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#headline-display {
+    margin-left: 10%;
+}
